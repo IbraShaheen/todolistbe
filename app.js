@@ -24,7 +24,7 @@ app.use((req,res,next) => {
 res.status(404).json({message: "Path not found"})
 })
 
-// erroe M.W
+// error M.W
 app.use((error,req,res,next) =>{
 res.status(error.status ?? 500).json(error.message ?? "Internal server error")
 })

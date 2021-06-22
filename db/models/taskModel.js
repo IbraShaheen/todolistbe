@@ -11,7 +11,7 @@ module.exports = (sequelize, DataTypes) => {
 
     priority: {
       type: DataTypes.STRING,
-      allowNull: false,
+    //   allowNull: false,
       defualtValue: "middle",
     },
 
