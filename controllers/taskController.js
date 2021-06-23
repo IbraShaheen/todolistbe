@@ -56,7 +56,7 @@ exports.taskDelete = async (req,res,next) => {
 exports.taskUpdate = async (req,res,next)=>{
     try {
         await req.task.update(req.body)
-        res.status(200).end()
+        res.status(201).json(req.task)
     } catch (error) {
         next(error)
     }

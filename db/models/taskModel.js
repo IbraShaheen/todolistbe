@@ -8,16 +8,20 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: false,
     //   unique: true,
     },
+    type:{
+      type: DataTypes.STRING,
+    },
+    details:{
+      type: DataTypes.STRING,
+    },
 
     priority: {
       type: DataTypes.STRING,
     //   allowNull: false,
-      defualtValue: "middle",
     },
 
     status: {
         type: DataTypes.BOOLEAN,
-        allowNull: false,
         defualtValue: false,
       },
 
@@ -26,7 +30,7 @@ module.exports = (sequelize, DataTypes) => {
       unique: true,
     },
 
-    deadline: {
+    dueDate: {
       type: DataTypes.DATEONLY,
     },
   });
