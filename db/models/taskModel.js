@@ -31,7 +31,7 @@ module.exports = (sequelize, DataTypes) => {
     },
 
     dueDate: {
-      type: DataTypes.DATEONLY,
+      type: DataTypes.DATE,
     },
   });
 
